@@ -34,7 +34,9 @@ Passos:
 2. Extração do arquivo ZIP.
 3. Adição do executável ao PATH do Windows.
 
+```bash
 $env:PATH=$env:PATH + "(;$pwd)"
+```
 
 ### Verificação da instalação
 
