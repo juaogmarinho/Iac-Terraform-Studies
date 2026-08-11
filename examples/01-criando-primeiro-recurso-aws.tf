@@ -1,0 +1,23 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "meu_primeiro_bucket" {
+  # Buckets S3 exigem nomes globais únicos.
+  # Adicione números aleatórios ao final para não dar erro de "Already Exists"
+  bucket = "minicurso-terraform-nome-unico-123" 
+  
+  tags = {
+    Name        = "Meu Bucket"
+    Environment = "Dev"
+  }
+}
