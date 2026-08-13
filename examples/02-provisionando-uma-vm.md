@@ -42,10 +42,7 @@
     terraform init
 
     terraform validate
-
-    
 ```
-
 ### Validação
 
 Execute terraform init e terraform validate. O comando validate verifica se a sintaxe está correta sem precisar conectar na nuvem.
