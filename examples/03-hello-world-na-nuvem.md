@@ -12,7 +12,7 @@ Utilizar a união de EC2, security group e user data para subir um site funciona
     # 1. Criar o Grupo de Segurança
     resource "aws_security_group" "permitir_web" {
     name        = "permitir_trafego_web"
-    description = "Libera HTTP e SSH"
+    description = "Libera HTTP"
     
     ingress {
         from_port   = 80
